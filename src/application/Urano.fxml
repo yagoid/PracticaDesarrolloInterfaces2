@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControlRocket">
+	<children>
+		<BorderPane prefHeight="500.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<center>
+				<VBox alignment="CENTER" fillWidth="false" prefHeight="350.0" prefWidth="252.0" BorderPane.alignment="CENTER">
+					<children>
+						<Label styleClass="login" stylesheets="@application.css" text="Information Page">
+							<font>
+								<Font size="23.0" />
+							</font>
+						</Label>
+                  <Label prefHeight="177.0" prefWidth="237.0" text="Galaxies are sprawling systems of dust, gas, dark matter, and anywhere from a million to a trillion stars that are held together by gravity. Nearly all large galaxies are thought to also contain supermassive black holes at their centers. In our own galaxy, the Milky Way, the sun is just one of about 100 to 400 billion stars that spin around Sagittarius A*, a supermassive black hole that contains as much mass as four million suns." textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+						<JFXButton fx:id="btnClose" onAction="#closeApp" onMouseEntered="#hover" onMouseExited="#unHover" prefHeight="27.0" prefWidth="196.0" stylesheets="@application.css" text="Close" textFill="WHITE">
+							<VBox.margin>
+								<Insets top="40.0" />
+							</VBox.margin>
+						</JFXButton>
+                  <Label />
+					</children>
+					<BorderPane.margin>
+						<Insets />
+					</BorderPane.margin>
+				</VBox>
+			</center>
+         <top>
+            <AnchorPane prefHeight="63.0" prefWidth="600.0" style="-fx-background-color: orange;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label styleClass="login" stylesheets="@application.css" text="GALAXY">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                     <padding>
+                        <Insets left="257.0" right="257.0" top="20.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </AnchorPane>
+         </top>
+         <left>
+            <VBox prefHeight="339.0" prefWidth="174.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="340.0" fitWidth="171.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../view/assets/vertical.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </left>
+         <right>
+            <VBox prefHeight="339.0" prefWidth="174.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="340.0" fitWidth="132.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../view/assets/vertical.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="43.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+         </right>
+         <bottom>
+            <Pane prefHeight="100.0" prefWidth="600.0" styleClass="sky" stylesheets="@application.css" BorderPane.alignment="CENTER" />
+         </bottom>
+		</BorderPane>
+	</children>
+</AnchorPane>
